@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/customjs.js"></script>
+    <script type="text/javascript">
+        var name = "Joan Podaca"; //GLOBAL VARIABLE
+        function retrievedName(){
+            var name = "Local Variable"; //LOCAL VARIABLE
+            return name;
+        }
+        console.log(name);
+        document.write(retrievedName());
+
+        function determinedAge(){
+            var age = 20;
+
+           /* if (age >= 18){
+                var status = "ADULT";
+            }else{
+                var status = "MINOR";
+            }*/
+            
+            var status = (age >= 18) ? "ADULT" : "MINOR";
+            return status;
+        }
+        document.write("<br></br>");
+        document.write(determinedAge());
+
+        document.write("<br></br>");
+        document.write(inputAge()); 
+       
+        
+    </script>
+</body>
+</html>

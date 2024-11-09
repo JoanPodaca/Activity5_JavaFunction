@@ -1,0 +1,16 @@
+.body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.header{
+    color: rgb(145, 10, 10);
+    text-align: center;
+    background-color: rgb(3, 151, 82);
+}
+
+.content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    background-color:rgb(3, 151, 82) ;
+    color: #ffffff;
+}

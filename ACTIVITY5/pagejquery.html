@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1> WELCOME TO JQUERY FUNCTION</h1>
+    <h2 id="samplejs"></h2>
+    <h2 class="showAnother" style="display: none;"> EXAMPLE Jquery Function</h2>
+    <h2 id="name"></h2>
+    <button type="button" id="clickMe"> CLICK ME</button>
+    <h2  id="showClick" style="display: none;">joan</h2>
+
+    
+    <button type="button" class="showAlert">SHOW ALERT</button>
+    <h2 id="displayName"></h2>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+       // document.getElementsByName("samplejs").innerhtml = "EXAMPLE JQUERY";
+        //JQUERY
+        $(document).ready(function(){
+            $("#samplejs").text("EXAMPLE JQUERY");
+            $("#samplejs").css("color", "blue").fadeOut(5000).show;
+            $(".showAnother").fadeIn(5000).show;
+            //$("#")
+
+            var name = showName("JOAN PODACA \t BSIS 3A")
+            $("#name").text(name).addClass("JOAN");
+           // alert(name);
+           $("#clickMe").click(function(){
+                $("#showClick").show();
+           });
+           $(".showAlert").click(function(data){
+            console.log(data);
+            const name = alertInputName();
+           // $("#displayName").text(name);
+            document.getElementById("displayName").innerHTML = name;
+            console.log(name);
+            console.log(data);
+           });
+
+
+        });
+        //JAVASCRIPT
+        function showName(name){
+            return name;
+        }
+
+        function alertInputName(){
+            name = prompt("ENTER YOUR NAME");
+            return name;
+        };
+
+    </script>
+
+    
+</body>
+</html>
